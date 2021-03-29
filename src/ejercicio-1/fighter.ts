@@ -10,6 +10,7 @@ export abstract class Fighter {
   constructor(protected name: string,
               protected weight: number,
               protected height: number,
+              protected phrase: string,
               stats: [number, number, number, number]) {
     this.stats.AT = stats[0];
     this.stats.DF = stats[1];
@@ -36,6 +37,13 @@ export abstract class Fighter {
   }
   public setHeight(height: number) {
     this.height = height;
+  }
+
+  public getPhrase() {
+    return this.phrase;
+  }
+  public setPhrase(phrase: string) {
+    this.phrase = phrase;
   }
 
   public getAT() {

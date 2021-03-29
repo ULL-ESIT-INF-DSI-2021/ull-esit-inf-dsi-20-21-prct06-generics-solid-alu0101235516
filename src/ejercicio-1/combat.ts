@@ -1,5 +1,5 @@
 import {Fighter} from './fighter';
-import { Naruto } from './naruto';
+import {Naruto} from './naruto';
 import {Pokemon} from './pokemon';
 
 export class Combat {
@@ -200,5 +200,39 @@ export class Combat {
     }
     dañoInt = Math.round(daño);
     return dañoInt;
+  }
+
+  public start() {
+    let FighterAttack: number = 0;
+    let i: number = 0;
+
+    while ((this.fighter1.getHP() > 0) && (this.fighter2.getHP() > 0)) {
+      console.log(`RONDA ${i}`);
+      i++;
+
+      if (FighterAttack == 0) {
+        console.log(`Esta atacando: ${this.fighter1.getName()}`);
+        this.fighter2.setHP((this.fighter2.getHP()) - this.damageGet(FighterAttack));
+        console.log(this.fighter1.getPhrase());
+        console.log(`Vida de ${this.fighter2.getName()} restante: ${this.fighter2.getHP()} HP.`);
+        console.log();
+        FighterAttack++;
+      } else {
+        console.log(`Esta atacando: ${this.fighter2.getName()}`);
+        this.fighter1.setHP((this.fighter1.getHP()) - this.damageGet(FighterAttack));
+        console.log(this.fighter2.getPhrase());
+        console.log(`Vida de ${this.fighter1.getName()} restante: ${this.fighter1.getHP()} HP.`);
+        console.log();
+        FighterAttack--;
+      }
+    }
+    console.log();
+    if (this.fighter1.getHP() < 0) {
+      console.log(`EL VENCEDOR ES ${this.fighter2.getName().toUpperCase()}!!!`);
+      return this.fighter2.getName().toUpperCase();
+    } else {
+      console.log(`EL VENCEDOR ES ${this.fighter1.getName().toUpperCase()}!!!`);
+      return this.fighter1.getName().toUpperCase();
+    }
   }
 }

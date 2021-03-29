@@ -5,9 +5,9 @@ type poktype = 'hierba' | 'electrico' | 'fuego' | 'agua';
 export class Pokemon extends Fighter {
   private universePH: string = "Pokemon";
 
-  constructor(name: string, weight: number, height: number, stats: [number, number, number, number],
+  constructor(name: string, weight: number, height: number, phrase: string, stats: [number, number, number, number],
               private PokType: poktype) {
-    super(name, weight, height, stats);
+    super(name, weight, height, phrase, stats);
   }
 
   public getPokType() {

@@ -6,10 +6,10 @@ type ocularTec = 'sharingan' | 'byakugan' | 'rinnegan' | 'tenseigan';
 export class Naruto extends Fighter {
   private universePH: string = "Naruto";
 
-  constructor(name: string, weight: number, height: number, stats: [number, number, number, number],
+  constructor(name: string, weight: number, height: number, phrase: string, stats: [number, number, number, number],
               private chakra: chakraType,
               private ocular?: ocularTec) {
-    super(name, weight, height, stats);
+    super(name, weight, height, phrase, stats);
   }
 
   public getChakra() {

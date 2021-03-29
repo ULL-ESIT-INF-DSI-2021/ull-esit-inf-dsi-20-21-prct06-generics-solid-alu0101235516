@@ -1,7 +1,7 @@
 import {Fighter} from './fighter';
 
 /**
- * Clase Pokedex contiene todos los luchadores.
+ * Clase fight book contiene todos los luchadores.
  */
 export class FightBook {
   /**
@@ -29,10 +29,10 @@ export class FightBook {
   }
 
   /**
-   * Funcion para mostrar por pantalla en forma de tabla la pokedex
+   * Funcion para mostrar por pantalla en forma de tabla la fight book
    */
 
   public mostrarFighterBook() {
-    console.table(this.GestorFighter, ["name", "weight", "height", "PokType", "chakra", "raza"]);
+    console.table(this.GestorFighter, ["name", "weight", "height", "PokType", "chakra", "ocular", "raza", "apoyo"]);
   }
 }

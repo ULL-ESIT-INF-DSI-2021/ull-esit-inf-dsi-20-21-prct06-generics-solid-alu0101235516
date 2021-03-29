@@ -1,15 +1,20 @@
-export type BasicStats = {
-  AT: number,
-  DF: number,
-  SP: number,
-  HP: number
-}
 
 export abstract class Fighter {
+  protected stats = {
+    AT: 0,
+    DF: 0,
+    SP: 0,
+    HP: 0,
+  }
+
   constructor(protected name: string,
               protected weight: number,
               protected height: number,
-              protected stats: BasicStats) {
+              stats: [number, number, number, number]) {
+    this.stats.AT = stats[0];
+    this.stats.DF = stats[1];
+    this.stats.SP = stats[2];
+    this.stats.HP = stats[3];
   }
 
   public getName() {
@@ -20,7 +25,7 @@ export abstract class Fighter {
   }
 
   public getWeight() {
-    this.weight;
+    return this.weight;
   }
   public setWeight(weight: number) {
     this.weight = weight;

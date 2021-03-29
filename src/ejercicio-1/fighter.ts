@@ -65,4 +65,6 @@ export abstract class Fighter {
   public setHP(HP: number) {
     this.stats.HP = HP;
   }
+
+  public abstract getUniverse(): string;
 }

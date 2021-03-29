@@ -4,6 +4,8 @@ type chakraType = 'rayo' | 'viento' | 'fuego' | 'agua' | 'tierra' | 'madera';
 type ocularTec = 'sharingan' | 'byakugan' | 'rinnegan' | 'tenseigan';
 
 export class Naruto extends Fighter {
+  private universePH: string = "Naruto";
+
   constructor(name: string, weight: number, height: number, stats: [number, number, number, number],
               private chakra: chakraType,
               private ocular?: ocularTec) {
@@ -22,5 +24,9 @@ export class Naruto extends Fighter {
   }
   public setOcular(ocular: ocularTec) {
     this.ocular = ocular;
+  }
+
+  public getUniverse(): string {
+    return this.universePH;
   }
 }

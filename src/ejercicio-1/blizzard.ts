@@ -1,9 +1,11 @@
 import {Fighter} from './fighter';
 
-type chakraType = 'mago' | 'brujo' | 'guerrero' | 'cazador de demonios' | 'cazador' | 'sacerdote' | 'druida';
+type chakraType = 'mago' | 'brujo' | 'cazador' | 'druida';
 type tipapoyo = 'alianza' | 'horda';
 
 export class Blizzard extends Fighter {
+  private universePH: string = "Blizzard";
+
   constructor(name: string, weight: number, height: number, stats: [number, number, number, number],
               private raza: chakraType,
               private apoyo: tipapoyo) {
@@ -22,5 +24,9 @@ export class Blizzard extends Fighter {
   }
   public setApoyo(apoyo: tipapoyo) {
     this.apoyo = apoyo;
+  }
+
+  public getUniverse(): string {
+    return this.universePH;
   }
 }

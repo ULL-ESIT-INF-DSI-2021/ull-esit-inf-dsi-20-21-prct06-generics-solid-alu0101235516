@@ -4,6 +4,7 @@ import {Pokemon} from '../src/ejercicio-1/pokemon';
 import {Naruto} from '../src/ejercicio-1/naruto';
 import {Blizzard} from '../src/ejercicio-1/blizzard';
 import {Fighter} from '../src/ejercicio-1/fighter';
+import {Combat} from '../src/ejercicio-1/combat';
 
 
 describe(`EJ 1 - EL COMBATE DEFINITIVO`, () => {
@@ -79,6 +80,19 @@ describe(`EJ 1 - EL COMBATE DEFINITIVO`, () => {
     });
     it('Apoyo a un bando', () => {
       expect(Malfurion.getApoyo()).to.be.equal("alianza");
+    });
+  });
+
+  describe(`Combate principal`, () => {
+    const combatePrincipal = new Combat(Hashirama, Malfurion);
+    it('Combatiente 1', () => {
+      expect(combatePrincipal.getFighter1().getUniverse()).to.be.equal("Naruto");
+    });
+    it('Combatiente 2', () => {
+      expect(combatePrincipal.getFighter2().getUniverse()).to.be.equal("Blizzard");
+    });
+    it('Combate principal', () => {
+      expect(combatePrincipal.getCombate()).to.be.equal(`El combate es entre Hashirama y Malfurion`);
     });
   });
 });

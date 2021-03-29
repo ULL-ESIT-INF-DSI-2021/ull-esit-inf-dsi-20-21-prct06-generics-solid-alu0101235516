@@ -5,6 +5,7 @@ import {Naruto} from '../src/ejercicio-1/naruto';
 import {Blizzard} from '../src/ejercicio-1/blizzard';
 import {Fighter} from '../src/ejercicio-1/fighter';
 
+
 describe(`EJ 1 - EL COMBATE DEFINITIVO`, () => {
   const Starmie: Pokemon = new Pokemon("Starmie", 80, 1.1, [75, 85, 115, 100], "agua");
   const Electrode: Pokemon = new Pokemon("Electrode", 66.6, 1.2, [50, 70, 150, 100], "electrico");

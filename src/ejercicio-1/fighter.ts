@@ -6,10 +6,10 @@ export type BasicStats = {
 }
 
 export abstract class Fighter {
-  constructor(private name: string,
-              private weight: number,
-              private height: number,
-              private stats: BasicStats) {
+  constructor(protected name: string,
+              protected weight: number,
+              protected height: number,
+              protected stats: BasicStats) {
   }
 
   public getName() {

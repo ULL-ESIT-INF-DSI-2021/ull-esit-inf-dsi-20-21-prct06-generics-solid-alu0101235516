@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "nyc mocha",
-    "start": "tsc-watch --onSuccess \"node dist/ejercicio-2/velocidad.js\"",
+    "start": "tsc-watch --onSuccess \"node dist/ejercicio-2/masa.js\"",
     "doc": "typedoc"
   },
   "repository": {

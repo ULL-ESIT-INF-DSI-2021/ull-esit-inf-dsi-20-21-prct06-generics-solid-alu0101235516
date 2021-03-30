@@ -12,6 +12,7 @@ export class Masa implements isConvertible<massUnits> {
    * Funcion para la conversion de unidades de masa
    * @param amount Valor de la unidad
    * @param unitTo Unidad a la que deseo convertir
+   * @param unitFrom Unidad de la que deseo convertir
    * @returns Un string con el resultado de la conversion
    */
 
@@ -22,7 +23,7 @@ export class Masa implements isConvertible<massUnits> {
       output = (`[${this.amount.toString()}] gramos es igual a [${this.amount * 0.00220462}] libras`);
       return output;
     } else {
-      output = (`${this.amount.toString()} libras es igual a ${this.amount * 453.592} gramos`);
+      output = (`[${this.amount.toString()}] libras es igual a [${this.amount * 453.592}] gramos`);
       return output;
     }
   }

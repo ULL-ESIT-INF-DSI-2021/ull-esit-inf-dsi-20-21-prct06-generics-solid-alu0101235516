@@ -12,6 +12,7 @@ export class Velocidad implements isConvertible<speedUnits> {
    * Funcion para la conversion de unidades de velocidad
    * @param amount Valor de la unidad
    * @param unitTo Unidad a la que deseo convertir
+   * @param unitFrom Unidad de la que deseo convertir
    * @returns Un string con el resultado de la conversion
    */
 
@@ -22,7 +23,7 @@ export class Velocidad implements isConvertible<speedUnits> {
       output = (`[${this.amount.toString()}] kilometros/hora es igual a [${this.amount * 0.621371}] millas/hora`);
       return output;
     } else {
-      output = (`${this.amount.toString()} millas/hora es igual a ${this.amount * 1.60934} kilometros/hora`);
+      output = (`[${this.amount.toString()}] millas/hora es igual a [${this.amount * 1.60934}] kilometros/hora`);
       return output;
     }
   }

@@ -27,19 +27,19 @@ export class Tiempo implements isConvertible<timeUnits> {
       output = (`[${this.amount.toString()}] segundos es igual a [${this.amount * 0.0166667}] minutos`);
       return output;
     } else if (this.unitTo === "segundo" && this.unitFrom === "minuto") {
-      output = (`${this.amount.toString()} minutos es igual a ${this.amount * 60} segundos`);
+      output = (`[${this.amount.toString()} minutos es igual a ${this.amount * 60}] segundos`);
       return output;
     } else if (this.unitTo === "hora" && this.unitFrom === "segundo") {
-      output = (`${this.amount.toString()} segundos es igual a ${this.amount * 0.000277778} horas`);
+      output = (`[${this.amount.toString()} segundos es igual a ${this.amount * 0.000277778}] horas`);
       return output;
     } else if (this.unitTo === "hora" && this.unitFrom === "minuto") {
-      output = (`${this.amount.toString()} minutos es igual a ${this.amount * 0.0166667} horas`);
+      output = (`[${this.amount.toString()} minutos es igual a ${this.amount * 0.0166667}] horas`);
       return output;
     } else if (this.unitTo === "segundo" && this.unitFrom === "hora") {
-      output = (`${this.amount.toString()} horas es igual a ${this.amount * 3600} segundos`);
+      output = (`[${this.amount.toString()} horas es igual a ${this.amount * 3600}] segundos`);
       return output;
     } else {
-      output = (`${this.amount.toString()} horas es igual a ${this.amount * 60} minutos`);
+      output = (`[${this.amount.toString()} horas es igual a ${this.amount * 60}] minutos`);
       return output;
     }
   }

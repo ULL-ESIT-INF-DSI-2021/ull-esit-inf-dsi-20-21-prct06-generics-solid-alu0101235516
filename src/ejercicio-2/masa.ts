@@ -22,7 +22,7 @@ export class Masa implements isConvertible<massUnits> {
       output = (`[${this.amount.toString()}] gramos es igual a [${this.amount * 0.00220462}] libras`);
       return output;
     } else {
-      output = (`${this.amount.toString()} libras es igual a ${this.amount * 1.60934} gramos`);
+      output = (`${this.amount.toString()} libras es igual a ${this.amount * 453.592} gramos`);
       return output;
     }
   }

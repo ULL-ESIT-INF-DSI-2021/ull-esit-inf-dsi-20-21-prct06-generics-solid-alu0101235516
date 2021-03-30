@@ -6,7 +6,7 @@ export class Masa implements isConvertible<massUnits> {
   /**
    * Constructor de la clase
    */
-  constructor(public amount: number, public unitTo: massUnits) {
+  constructor(public amount: number, public unitTo: massUnits, public unitFrom: massUnits) {
   }
   /**
    * Funcion para la conversion de unidades de masa
@@ -28,5 +28,5 @@ export class Masa implements isConvertible<massUnits> {
   }
 }
 
-const masa: Masa = new Masa(100, "libras");
+const masa: Masa = new Masa(100, "libras", "gramos");
 console.log(masa.conversor());

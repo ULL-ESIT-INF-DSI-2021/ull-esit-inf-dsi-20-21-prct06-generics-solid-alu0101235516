@@ -6,7 +6,7 @@ export class Velocidad implements isConvertible<speedUnits> {
   /**
    * Constructor de la clase
    */
-  constructor(public amount: number, public unitTo: speedUnits) {
+  constructor(public amount: number, public unitTo: speedUnits, public unitFrom: speedUnits) {
   }
   /**
    * Funcion para la conversion de unidades de velocidad
@@ -28,5 +28,5 @@ export class Velocidad implements isConvertible<speedUnits> {
   }
 }
 
-const velocidad: Velocidad = new Velocidad(100, "millas");
+const velocidad: Velocidad = new Velocidad(100, "millas", "kilometros");
 console.log(velocidad.conversor());

@@ -6,7 +6,7 @@ export class Longitud implements isConvertible<lengthUnits> {
   /**
    * Constructor de la clase
    */
-  constructor(public amount: number, public unitTo: lengthUnits) {
+  constructor(public amount: number, public unitTo: lengthUnits, public unitFrom: lengthUnits) {
   }
   /**
    * Funcion para la conversion de unidades de longitud
@@ -28,5 +28,5 @@ export class Longitud implements isConvertible<lengthUnits> {
   }
 }
 
-const longitud: Longitud = new Longitud(100, "yardas");
+const longitud: Longitud = new Longitud(100, "yardas", "metros");
 console.log(longitud.conversor());

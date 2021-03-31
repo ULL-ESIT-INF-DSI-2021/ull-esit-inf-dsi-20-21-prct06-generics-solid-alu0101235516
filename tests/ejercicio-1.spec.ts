@@ -76,11 +76,11 @@ describe(`EJ 1 - EL COMBATE DEFINITIVO`, () => {
     });
   });
 
-  describe(`Probar mostrado de la pokedex en formato tabla`, () => {
-    it('Se puede crear un tipo pokedex', () => {
+  describe(`Probar mostrado del libro de luchadores en formato tabla`, () => {
+    it('Se puede crear un tipo Fightbook', () => {
       expect(LibroLuchadores.getFighters()).not.to.be.equal(null);
     });
-    it('Todos los pokemon de la pokedex', () => {
+    it('Todos los luchadores del libro', () => {
       LibroLuchadores.mostrarFighterBook();
     });
   });

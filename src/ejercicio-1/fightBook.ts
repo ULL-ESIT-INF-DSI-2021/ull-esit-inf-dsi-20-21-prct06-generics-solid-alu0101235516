@@ -8,6 +8,7 @@ export class FightBook {
    * Constructor de la clase
    * @param GestorFighter Conjunto de luchadores
    */
+
   constructor(private GestorFighter: Fighter[]) {}
 
   /**

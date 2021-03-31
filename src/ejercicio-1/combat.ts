@@ -3,20 +3,42 @@ import {Naruto} from './naruto';
 import {Pokemon} from './pokemon';
 
 export class Combat {
+  /**
+   * COnstructor de la clase
+   * @param fighter1 Primer luchador
+   * @param fighter2 Segundo luchador
+   */
   constructor(private fighter1: Fighter, private fighter2: Fighter) {
   }
 
+  /**
+   * Funcion para acceder a los datos del luchador 1
+   * @returns los datos del luchador 1
+   */
   public getFighter1() {
     return this.fighter1;
   }
+  /**
+   * Funcion para acceder a los datos del luchador 2
+   * @returns los datos del luchador 2
+   */
   public getFighter2() {
     return this.fighter2;
   }
 
+  /**
+   * Funcion para ver entre quien es el combate
+   * @returns Una string con la informacion del combate
+   */
   public getCombate() {
     return (`El combate es entre ${this.fighter1.getName()} y ${this.fighter2.getName()}`);
   }
 
+  /**
+   * Funcion para calcular el daño de cada luchador
+   * @param FighterAttack que luchador esta atacando
+   * @returns el daño que hace el luchador que esta atacando
+   */
   public damageGet(FighterAttack: number) {
     let efectFighter1: number = 0;
     let efectFighter2: number = 0;
@@ -202,6 +224,10 @@ export class Combat {
     return dañoInt;
   }
 
+  /**
+   * Funcion para comenzar con la simulación del combate
+   * @returns el vencedor del combate
+   */
   public start() {
     let FighterAttack: number = 0;
     let i: number = 0;

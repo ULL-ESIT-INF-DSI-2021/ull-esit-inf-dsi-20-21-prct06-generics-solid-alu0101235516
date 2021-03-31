@@ -1196,9 +1196,9 @@ describe(`EJ 2 - CONVERSOR DE UNIDADES`, () => {
   
   ![EJ1](images/EJ1.PNG)
   
-  ![EJ2](images/EJ2.PNG)
+  ![EJ1.1](images/EJ11.PNG)
   
-  ![EJ3](images/EJ3.PNG)
+  ![EJ3](images/EJ2.PNG)
 
 
 ### Conclusiones.

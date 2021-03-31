@@ -10,9 +10,6 @@ export class Volumen implements isConvertible<volumeUnits> {
   }
   /**
    * Funcion para la conversion de unidades de volumen
-   * @param amount Valor de la unidad
-   * @param unitTo Unidad a la que deseo convertir
-   * @param unitFrom Unidad de la que deseo convertir
    * @returns Un string con el resultado de la conversion
    */
 

@@ -14,9 +14,6 @@ export class Tiempo implements isConvertible<timeUnits> {
   }
   /**
    * Funcion para la conversion de unidades de tiempo
-   * @param amount Valor de la unidad
-   * @param unitTo Unidad a la que deseo convertir
-   * @param unitFrom Unidad de la que deseo convertir
    * @returns Un string con el resultado de la conversion
    */
 

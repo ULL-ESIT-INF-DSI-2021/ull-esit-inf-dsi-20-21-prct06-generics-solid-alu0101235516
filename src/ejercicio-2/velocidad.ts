@@ -10,9 +10,6 @@ export class Velocidad implements isConvertible<speedUnits> {
   }
   /**
    * Funcion para la conversion de unidades de velocidad
-   * @param amount Valor de la unidad
-   * @param unitTo Unidad a la que deseo convertir
-   * @param unitFrom Unidad de la que deseo convertir
    * @returns Un string con el resultado de la conversion
    */
 
@@ -28,6 +25,3 @@ export class Velocidad implements isConvertible<speedUnits> {
     }
   }
 }
-
-const velocidad: Velocidad = new Velocidad(100, "millas", "kilometros");
-console.log(velocidad.conversor());

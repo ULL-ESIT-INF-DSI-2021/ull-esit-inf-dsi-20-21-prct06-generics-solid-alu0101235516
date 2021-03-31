@@ -10,9 +10,6 @@ export class Fuerza implements isConvertible<forceUnits> {
   }
   /**
    * Funcion para la conversion de unidades de fuerza
-   * @param amount Valor de la unidad
-   * @param unitTo Unidad a la que deseo convertir
-   * @param unitFrom Unidad de la que deseo convertir
    * @returns Un string con el resultado de la conversion
    */
 
